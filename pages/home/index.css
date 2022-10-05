@@ -1,1 +1,139 @@
-/* Desenvolva sua estilização aqui ... */
+.head{
+    width: 100%;
+    margin-top: 4.83rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-gen{
+    width: 100%;
+    margin-top: 4.063rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.666rem;
+}
+
+.buttons-gen{
+    width: 100%;
+    display: flex;
+    gap: var(--font-3);
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.categories{
+    width: 73px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey-6);
+    border-radius: 0.4rem;
+    color: var(--color-grey-2);
+    cursor: pointer;
+}
+
+.categories:hover{
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-8);
+}
+
+.ative{
+    background-color: var(--color-grey-2);
+    color: var( --color-grey-8); 
+}
+
+
+.price-define{
+    width: 100%;
+    margin-top: 3.750rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.define-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.max-price{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    gap: 0.313rem;
+}
+
+.albuns-search{
+    width: 100%;
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.375rem;
+}
+
+.albuns-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1.563rem;
+    justify-content: space-between;
+}
+
+.card-album{
+    width: 19.25rem;
+    height: 16.188rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-grey-8);
+    border: 1px solid var(--color-grey-8);
+    border-radius: var(--radius1);
+}
+
+.album-desc{
+    width: 100%;
+    height: 56.37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.album-band{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.album-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.range-price{
+    appearance: none;
+    background:var(  --color-brand-2);
+    outline: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 9px;   
+}
+.range-price::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 8px solid var(--color-brand-1);
+    border-radius: 50%; 
+    background: var(--color-grey-9);
+    cursor: pointer;
+}

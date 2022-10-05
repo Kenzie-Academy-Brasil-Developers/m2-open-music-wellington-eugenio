@@ -4,14 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="index.css" />
+    <script src="https://kit.fontawesome.com/f61ea46038.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../styles/img.css" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css"/>
+    <link rel="stylesheet" href="../../styles/buttons.css"/>
+    <link rel="stylesheet" href="../../styles/text.css"/>
+    <link rel="stylesheet" href="./index.css"/>
     <title>Open Music</title>
   </head>
-  <body>
-    <main></main>
+  <body id="body">
+   
+    <main class="main-container">
+      
+      <header class="head">
+        
+        <h1 class="logo">open music</h1>
+        
+        <button class="btn-dark moon" id="dark-btn"><i class="fa-solid fa-moon"></i></button>
+          
+      </header>
+      
+      <section class="select-gen">
+
+        <h2 class="section-title">Gênero musical</h2>
+        
+        <ul class="buttons-gen" id="genList">
+
+        </ul>
+        
+      
+      </section>
+      
+      <section class="price-define">
+        
+        <div class="define-head">
+          
+          <h2 class="section-title">Definir Preço</h2>
+          
+          <div class="max-price">
+            
+            <p class="price-txt">ate R$</p>
+            
+            <label class="price-txt number" id="priceNumber" for="price">250</label>
+          
+          </div>
+        
+        </div>
+        
+        <input class="range-price" type="range" name="price" id="max-price" min="40" max="250">
+      
+      </section>
+      
+      <section class="albuns-search">
+        
+        <h2 class="section-title">Albums encontrados</h2>
+        
+        <ul class="albuns-list" id="list">        
+        
+        </ul>
+      </section>
+    
+    </main>
+    
+    
+    
+    <script src="../../scripts/productsData.js"></script>
+    <script src="../home/index.js"></script>
+    <script src="../../scripts/render.js"></script>
     <script src="../../scripts/theme.js"></script>
-    <script src="./productsData.js"></script>
-    <script src="./index.js"></script>
+    <script src="../../scripts/filter.js"></script>
+  
   </body>
+
 </html>
